@@ -1,0 +1,13 @@
+#!/bin/ksh
+. ~/.profile
+apidays
+ccloud 
+set -x
+export CLUSTER_CLOUD=aws 
+export CLUSTER_REGION=ap-southeast-1
+read Paused
+set +x
+#yes y | confluent local destroy
+cd examples-5.5.1-post/ccloud
+chmod +x start.sh
+yes y | ./start.sh
