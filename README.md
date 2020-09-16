@@ -1,5 +1,5 @@
 # Introduction
-This repository is used to test a local Confluent Platform cluster integrating with a Confluent Cloud cluster.
+This repository is used to test a local Confluent Platform cluster integrating with a Confluent Cloud cluster. It was used as the basis of a demonstration during the APIdays workshop, and is provided for participants to try out the scripted process.
 
 This more advanced demo showcases an on-prem Kafka cluster and [Confluent Cloud](https://www.confluent.io/confluent-cloud/?utm_source=github&utm_medium=demo&utm_campaign=ch.examples_type.community_content.top) cluster, and data copied between them with Confluent Replicator <br><img src="examples-5.5.1-post/ccloud/docs/images/services-in-cloud.jpg" width="450">
 
