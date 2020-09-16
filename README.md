@@ -1,6 +1,8 @@
 # Introduction
 This repository is used to test a local Confluent Platform cluster integrating with a Confluent Cloud cluster. It was used as the basis of a demonstration during the APIdays workshop, and is provided for participants to try out the scripted process.
 
+This repo demonstrates a fully scripted event streaming system that spans on-prem and fully-managed on cloud. Most of the setup commands use the "ccloud" cli - the Confluent Cloud CLI. The "start-aws" (and similar) scripts in this demo assume you have download and unpacked Confluent Platform on your laptop https://www.confluent.io/download. Alternatively use examples-5.5.1-post/ccloud/start-docker.sh to start the Dockerized version of this demo.
+
 This more advanced demo showcases an on-prem Kafka cluster and [Confluent Cloud](https://www.confluent.io/confluent-cloud/?utm_source=github&utm_medium=demo&utm_campaign=ch.examples_type.community_content.top) cluster, and data copied between them with Confluent Replicator <br><img src="examples-5.5.1-post/ccloud/docs/images/services-in-cloud.jpg" width="450">
 
 The completed script will:
