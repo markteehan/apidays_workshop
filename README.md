@@ -31,8 +31,9 @@ Additionally, the script uses your Confluent Cloud username and password, which 
 # Getting started
 
 1. Clone the repository
-2. Replace the `<USER_EMAIL>` and `<PASSWORD>` fields in the `.apidays` file with your Confluent Cloud credentials
-3. Run the script appropriate to your choice of cloud provider. Eg: `./runme-aws`
+2. Copy `.apidays.default` to `.apidays`. 
+3. Replace the `<USER_EMAIL>` and `<PASSWORD>` fields in the `.apidays` file with your Confluent Cloud credentials. This file will be ignored by git.
+4. Run the script appropriate to your choice of cloud provider. Eg: `./runme-aws`
 
 
 # Going further
