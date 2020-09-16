@@ -1,0 +1,19 @@
+apidays()
+{
+EMAIL='<USER_EMAIL>'
+PASSWORD='<PASSWORD>'
+export CC_USERNAME=${EMAIL}
+export CC_PASSWORD=${PASSWORD}
+OUTPUT=$(
+expect <<END
+  log_user 1
+  spawn ccloud login
+  expect "Email: "
+  send "$EMAIL\r";
+  expect "Password: "
+  send "$PASSWORD\r";
+  expect "Logged in as "
+  set result $expect_out(buffer)
+END
+)
+}
